@@ -119,26 +119,26 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(224, 224, 224)
+                        .addGap(225, 225, 225)
                         .addComponent(jLabel8))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(198, 198, 198)
-                        .addComponent(btnBegin_tab01))
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel1))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel1)))
-                .addContainerGap(1205, Short.MAX_VALUE))
+                        .addGap(196, 196, 196)
+                        .addComponent(btnBegin_tab01)))
+                .addContainerGap(1317, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel1)
-                .addGap(59, 59, 59)
+                .addGap(60, 60, 60)
                 .addComponent(jLabel8)
-                .addGap(31, 31, 31)
+                .addGap(28, 28, 28)
                 .addComponent(btnBegin_tab01)
-                .addContainerGap(320, Short.MAX_VALUE))
+                .addGap(325, 325, 325))
         );
 
         jTabbedPane1.addTab("tab1", jPanel2);
@@ -180,25 +180,29 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
+                        .addGap(30, 30, 30)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jRadioButton4)
-                                    .addComponent(jRadioButton3)
-                                    .addComponent(jRadioButton2)
-                                    .addComponent(jLabel9)
-                                    .addComponent(jRadioButton1))
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(30, 30, 30)
+                                        .addComponent(jLabel9))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(60, 60, 60)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jRadioButton2)
+                                            .addComponent(jRadioButton1)
+                                            .addComponent(jRadioButton3)
+                                            .addComponent(jRadioButton4))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 323, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
-                                .addGap(0, 1464, Short.MAX_VALUE))))
+                                .addGap(0, 1562, Short.MAX_VALUE))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(207, 207, 207)
+                        .addGap(210, 210, 210)
                         .addComponent(btnPrev_tab02)
-                        .addGap(28, 28, 28)
+                        .addGap(30, 30, 30)
                         .addComponent(btnNext_tab02)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -206,32 +210,32 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel2)
-                .addGap(27, 27, 27)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton1)
-                .addGap(31, 31, 31)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton2)
-                .addGap(36, 36, 36)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton3)
-                .addGap(32, 32, 32)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton4)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnNext_tab02)
                     .addComponent(btnPrev_tab02))
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab2", jPanel3);
 
         jLabel3.setText("Tab 3");
 
-        jLabel10.setText("<html>3. True or false?<br>\nThe J1407 planet has ring.</html>");
+        jLabel10.setText("<html>2. True or false?<br>\nThe J1407 planet has ring.</html>");
 
         buttonGroup2.add(jRadioButton5);
         jRadioButton5.setText("True");
@@ -260,44 +264,44 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel3))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(161, 161, 161)
+                        .addGap(60, 60, 60)
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
+                        .addGap(90, 90, 90)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jRadioButton6)
                             .addComponent(jRadioButton5)))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(189, 189, 189)
+                        .addGap(210, 210, 210)
                         .addComponent(btnPrev_tab03)
-                        .addGap(48, 48, 48)
+                        .addGap(30, 30, 30)
                         .addComponent(btnNext_tab03)))
-                .addContainerGap(1126, Short.MAX_VALUE))
+                .addContainerGap(1233, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel3)
-                .addGap(47, 47, 47)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton5)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton6)
-                .addGap(66, 66, 66)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnPrev_tab03)
                     .addComponent(btnNext_tab03))
-                .addContainerGap(175, Short.MAX_VALUE))
+                .addContainerGap(365, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab3", jPanel4);
 
-        jLabel11.setText("4. Which is the biggest planet in these list?");
+        jLabel11.setText("3. Which is the biggest planet in these list?");
 
         buttonGroup1.add(jRadioButton7);
         jRadioButton7.setText("The Earth");
@@ -335,60 +339,59 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jSeparator3, javax.swing.GroupLayout.DEFAULT_SIZE, 1498, Short.MAX_VALUE))
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.DEFAULT_SIZE, 1608, Short.MAX_VALUE))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(101, 101, 101)
+                                .addGap(60, 60, 60)
                                 .addComponent(jLabel11))
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(236, 236, 236)
+                                .addGap(210, 210, 210)
                                 .addComponent(btnPrev_tab04)
-                                .addGap(33, 33, 33)
+                                .addGap(30, 30, 30)
                                 .addComponent(btnNext_tab04))
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(98, 98, 98)
-                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jRadioButton10)
-                                    .addComponent(jRadioButton9)
+                                .addGap(30, 30, 30)
+                                .addComponent(jLabel4))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(90, 90, 90)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton8)
-                                    .addComponent(jRadioButton7))))
+                                    .addComponent(jRadioButton7)
+                                    .addComponent(jRadioButton9)
+                                    .addComponent(jRadioButton10))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel11)
-                .addGap(35, 35, 35)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton7)
-                .addGap(31, 31, 31)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton8)
-                .addGap(36, 36, 36)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton9)
-                .addGap(32, 32, 32)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton10)
-                .addGap(34, 34, 34)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnPrev_tab04)
                     .addComponent(btnNext_tab04))
-                .addContainerGap(140, Short.MAX_VALUE))
+                .addContainerGap(265, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab4", jPanel5);
 
         jLabel5.setText("Tab 5");
 
-        jLabel12.setText("<html>2. True or false?<br>\nWISEP J121756.91+162640.2 A is a Gas giant planet.</html>");
+        jLabel12.setText("<html>4. True or false?<br>\nWISEP J121756.91+162640.2 A is a Gas giant planet.</html>");
 
         buttonGroup2.add(jRadioButton11);
         jRadioButton11.setText("True");
@@ -417,39 +420,39 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(152, 152, 152)
+                        .addGap(60, 60, 60)
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(137, 137, 137)
+                        .addGap(90, 90, 90)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jRadioButton12)
                             .addComponent(jRadioButton11)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(261, 261, 261)
+                        .addGap(210, 210, 210)
                         .addComponent(btnPrev_tab05)
-                        .addGap(36, 36, 36)
+                        .addGap(30, 30, 30)
                         .addComponent(btnNext_tab05))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel5)))
-                .addContainerGap(1066, Short.MAX_VALUE))
+                .addContainerGap(1233, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel5)
-                .addGap(37, 37, 37)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton11)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton12)
-                .addGap(52, 52, 52)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnNext_tab05)
                     .addComponent(btnPrev_tab05))
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(365, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab5", jPanel6);
@@ -491,48 +494,47 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel13)
-                        .addGap(89, 89, 89)
+                        .addGap(30, 30, 30)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton14)
-                                    .addComponent(jRadioButton13)
-                                    .addComponent(jRadioButton15)
-                                    .addComponent(jRadioButton16)))
-                            .addComponent(jLabel19)))
+                            .addComponent(jRadioButton14)
+                            .addComponent(jRadioButton13)
+                            .addComponent(jRadioButton15)
+                            .addComponent(jRadioButton16)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(248, 248, 248)
-                        .addComponent(btnPrev_tab06)
-                        .addGap(28, 28, 28)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addComponent(jLabel19)
+                                .addGap(28, 28, 28))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                                .addGap(210, 210, 210)
+                                .addComponent(btnPrev_tab06)
+                                .addGap(30, 30, 30)))
                         .addComponent(btnNext_tab06)))
-                .addContainerGap(1087, Short.MAX_VALUE))
+                .addContainerGap(1223, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel19))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabel13)))
-                .addGap(58, 58, 58)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel13)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel19)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton13)
                 .addGap(30, 30, 30)
                 .addComponent(jRadioButton14)
-                .addGap(32, 32, 32)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton15)
-                .addGap(27, 27, 27)
+                .addGap(30, 30, 30)
                 .addComponent(jRadioButton16)
-                .addGap(28, 28, 28)
+                .addGap(30, 30, 30)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnPrev_tab06)
                     .addComponent(btnNext_tab06))
-                .addContainerGap(162, Short.MAX_VALUE))
+                .addContainerGap(281, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab6", jPanel7);
@@ -562,31 +564,31 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
+                        .addGap(200, 200, 200)
                         .addComponent(jLabel15))
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
-                        .addComponent(btnCheckAnsw_tab07))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(260, 260, 260)
+                        .addGap(210, 210, 210)
                         .addComponent(btnPrev_tab07))
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel14)))
-                .addContainerGap(1175, Short.MAX_VALUE))
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel14))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(225, 225, 225)
+                        .addComponent(btnCheckAnsw_tab07)))
+                .addContainerGap(1234, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel14)
-                .addGap(38, 38, 38)
+                .addGap(60, 60, 60)
                 .addComponent(jLabel15)
-                .addGap(68, 68, 68)
+                .addGap(32, 32, 32)
                 .addComponent(btnCheckAnsw_tab07)
-                .addGap(61, 61, 61)
+                .addGap(60, 60, 60)
                 .addComponent(btnPrev_tab07)
-                .addContainerGap(224, Short.MAX_VALUE))
+                .addContainerGap(367, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab7", jPanel8);
@@ -606,7 +608,7 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
+                        .addGap(200, 200, 200)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel9Layout.createSequentialGroup()
                                 .addComponent(jLabel18)
@@ -614,22 +616,22 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
                                 .addComponent(jLabelFinal))
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel16)))
-                .addContainerGap(1246, Short.MAX_VALUE))
+                .addContainerGap(1316, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel16)
                 .addGap(26, 26, 26)
                 .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(71, 71, 71)
+                .addGap(60, 60, 60)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(jLabelFinal))
-                .addContainerGap(308, Short.MAX_VALUE))
+                .addContainerGap(445, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab8", jPanel9);
@@ -708,7 +710,7 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
         
         
         
-        if(jRadioButton6.isSelected() == true){
+        if(jRadioButton5.isSelected() == true){
             
             goodAnswersCount++;
         }
@@ -779,7 +781,7 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
         
         
         
-        if(jRadioButton11.isSelected() == true){
+        if(jRadioButton12.isSelected() == true){
             
             goodAnswersCount++;
         }
@@ -859,7 +861,7 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
                 
             }
             
-            if(jRadioButton6.isSelected() == true){
+            if(jRadioButton5.isSelected() == true){
                 
                 numberOfGoodAnswers++;
                 
@@ -873,7 +875,7 @@ public class MyJFrame_6_full extends javax.swing.JFrame {
             
             }
             
-            if(jRadioButton11.isSelected() == true){
+            if(jRadioButton12.isSelected() == true){
                 
                 numberOfGoodAnswers++;
                 
