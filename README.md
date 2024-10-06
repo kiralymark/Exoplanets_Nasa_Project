@@ -9,16 +9,16 @@
 
 ## This repo contains:
 - A game in Godot,
-  in which you can navigate a space ship to
+  in which you can navigate a spaceship to
   4 exoplanets and a Star!
   It is an Exoplanet viewer game, where
   you can use a spaceship to navigate on the map.
-  We thought that by visualizing exoplanets,
-  will make it much more exciting for students who
-  wish to learn about this subject.
+  We believe that visualizing exoplanets will make the
+  learning experience much more exciting for
+  students interested in this subject.
 
-- Also, we wanted to make this project a little bit more
-  unforgettable by making a quiz in NetBeans and
+- Additionally, we wanted to make this project more memorable
+  by making a quiz in NetBeans and
   Java Swing, using Java as the programming language.
 
 
