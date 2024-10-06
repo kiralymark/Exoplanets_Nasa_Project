@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpcon11ehjs6y"]
+
+[ext_resource type="PackedScene" uid="uid://drkidyeomeo76" path="res://Assets/Planets/kepler_93_b/kepler_93_b.glb" id="1_oi7ah"]
+[ext_resource type="Texture2D" uid="uid://dwyrd8jexb6tk" path="res://Assets/Planets/kepler_93_b/kepler_93_b_kepler93b.png" id="2_qsaqe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aavar"]
+albedo_texture = ExtResource("2_qsaqe")
+
+[node name="kepler_93_b" instance=ExtResource("1_oi7ah")]
+
+[node name="Surface" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_aavar")

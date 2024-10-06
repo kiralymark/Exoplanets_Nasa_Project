@@ -1,0 +1,214 @@
+[gd_scene load_steps=14 format=3 uid="uid://dlnda36e0aair"]
+
+[ext_resource type="PackedScene" uid="uid://c3b2ruprgundp" path="res://Scenes/55_cancri_e_bake.tscn" id="1_tt36w"]
+[ext_resource type="Script" path="res://Scripts/SpaceShip.gd" id="2_l5gl6"]
+[ext_resource type="PackedScene" uid="uid://cxh2w0yyxe68t" path="res://Scenes/j_1407b.tscn" id="2_oeqdi"]
+[ext_resource type="Script" path="res://Scripts/Planet.gd" id="2_y0fbd"]
+[ext_resource type="PackedScene" uid="uid://dpcon11ehjs6y" path="res://Scenes/kepler_93_b.tscn" id="3_8fqhq"]
+[ext_resource type="PackedScene" uid="uid://huxdrhbo18mq" path="res://Scenes/lightstar.tscn" id="4_sxya4"]
+[ext_resource type="PackedScene" uid="uid://4yfbcxtvubl5" path="res://Assets/Planets/TOI-1231_b_bake/TOI-1231_b_bake.glb" id="7_xkaub"]
+[ext_resource type="PackedScene" uid="uid://c1netfgj7wrpr" path="res://Assets/Planets/WISEP_J121756.91+162640.2_A/WISEP_J121756.91+162640.2_A.glb" id="8_dvslf"]
+
+[sub_resource type="Environment" id="Environment_lxcx8"]
+background_mode = 1
+
+[sub_resource type="Environment" id="Environment_48q8o"]
+background_mode = 1
+
+[sub_resource type="Environment" id="Environment_l50jv"]
+background_mode = 1
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_curp3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_e63o4"]
+
+[node name="MainScene" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -399.213, 29.8846, 123.172)
+
+[node name="CameraWide" type="Camera3D" parent="."]
+transform = Transform3D(0.368189, -0.380854, 0.848167, 0.0680926, 0.920847, 0.383931, -0.927254, -0.0836055, 0.364979, -167.855, 52.5819, 142.286)
+environment = SubResource("Environment_lxcx8")
+
+[node name="SpaceShip" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -241.672, 5.25278, 113.296)
+script = ExtResource("2_l5gl6")
+
+[node name="CameraOuter" type="Camera3D" parent="SpaceShip"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+environment = SubResource("Environment_48q8o")
+
+[node name="CameraInner" type="Camera3D" parent="SpaceShip"]
+transform = Transform3D(1, 0, 2.38419e-07, 0, 1, 0, -2.38419e-07, 0, 1, -0.176446, 1.03707, -2.29766)
+environment = SubResource("Environment_l50jv")
+
+[node name="LightStar" parent="SpaceShip" instance=ExtResource("4_sxya4")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="SpaceShip"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpaceShip/Area3D"]
+transform = Transform3D(2.653, -4.00592e-07, 1.75104e-14, 0, -1.15966e-07, -2.653, 4.00592e-07, 2.653, -1.15966e-07, 0, 0.878147, -0.201736)
+shape = SubResource("CapsuleShape3D_curp3")
+
+[node name="55_Cancri_e" type="Node3D" parent="."]
+transform = Transform3D(0.513, 0, 0, 0, 0.513, 0, 0, 0, 0.513, -269.124, 1, 104.568)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="55_Cancri_e"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="55_Cancri_e/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="55_Cancri_e_bake" parent="55_Cancri_e" instance=ExtResource("1_tt36w")]
+
+[node name="J1407B" type="Node3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -283.14, -0.393406, 130.837)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="J1407B"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="J1407B/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="J1407B" parent="J1407B" instance=ExtResource("2_oeqdi")]
+
+[node name="Kepler_93_b" type="Node3D" parent="."]
+transform = Transform3D(0.135, 0, 0, 0, 0.135, 0, 0, 0, 0.135, -253.067, 1, 144.516)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="Kepler_93_b"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kepler_93_b/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="kepler_93_b" parent="Kepler_93_b" instance=ExtResource("3_8fqhq")]
+
+[node name="TOI-1231_b" type="Node3D" parent="."]
+transform = Transform3D(0.326, 0, 0, 0, 0.326, 0, 0, 0, 0.326, -324.746, 1, 123.617)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="TOI-1231_b"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TOI-1231_b/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="TOI-1231_b_bake" parent="TOI-1231_b" instance=ExtResource("7_xkaub")]
+
+[node name="WISEP_J121756_91+162640_2_A2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -288.678, 1, 156.402)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="WISEP_J121756_91+162640_2_A2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WISEP_J121756_91+162640_2_A2/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="WISEP_J121756_91+162640_2_A" parent="WISEP_J121756_91+162640_2_A2" instance=ExtResource("8_dvslf")]
+
+[node name="DescriptionLabel" type="Label" parent="."]
+offset_left = 8.0
+offset_right = 48.0
+offset_bottom = 23.0
+vertical_alignment = 1
+
+[node name="ChangeViewButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_right = -7.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Change view"
+alignment = 2
+
+[node name="55CancriEButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 31.0
+offset_right = -20.0
+offset_bottom = 62.0
+grow_horizontal = 0
+text = "55 Cancri e"
+alignment = 2
+
+[node name="J1407BButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 62.0
+offset_right = -20.0
+offset_bottom = 93.0
+grow_horizontal = 0
+text = "J1407B"
+alignment = 2
+
+[node name="Kepler93BButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 94.0
+offset_right = -19.0
+offset_bottom = 125.0
+grow_horizontal = 0
+text = "kepler 93 b"
+alignment = 2
+
+[node name="TOI1231BButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 125.0
+offset_right = -20.0
+offset_bottom = 156.0
+grow_horizontal = 0
+text = "TOI-1231 b"
+alignment = 2
+
+[node name="WISEP_J121756_91+162640_2_A3Button" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -113.0
+offset_top = 156.0
+offset_right = -20.0
+offset_bottom = 256.0
+grow_horizontal = 0
+text = "WISEP
+J121756
+91+162640
+2 A"
+alignment = 2
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -288.678, 1, 158.758)
+light_energy = 16.0
+spot_range = 4096.0
+spot_attenuation = 0.0371628
+spot_angle = 75.91
+
+[connection signal="area_entered" from="SpaceShip/Area3D" to="SpaceShip" method="_on_area_3d_area_entered"]
+[connection signal="input_event" from="55_Cancri_e/Area3D" to="55_Cancri_e" method="_on_area_3d_input_event"]
+[connection signal="input_event" from="J1407B/Area3D" to="J1407B" method="_on_area_3d_input_event"]
+[connection signal="input_event" from="Kepler_93_b/Area3D" to="Kepler_93_b" method="_on_area_3d_input_event"]
+[connection signal="input_event" from="TOI-1231_b/Area3D" to="TOI-1231_b" method="_on_area_3d_input_event"]
+[connection signal="input_event" from="WISEP_J121756_91+162640_2_A2/Area3D" to="WISEP_J121756_91+162640_2_A2" method="_on_area_3d_input_event"]
+[connection signal="pressed" from="ChangeViewButton" to="SpaceShip" method="_on_change_view_button_pressed"]
+[connection signal="pressed" from="55CancriEButton" to="55_Cancri_e" method="_on_cancri_e_button_pressed"]
+[connection signal="pressed" from="J1407BButton" to="J1407B" method="_on_j_1407b_2_button_pressed"]
+[connection signal="pressed" from="Kepler93BButton" to="Kepler_93_b" method="_on_kepler_93b_button_pressed"]
+[connection signal="pressed" from="TOI1231BButton" to="TOI-1231_b" method="_on_toi_1231b_pressed"]
+[connection signal="pressed" from="WISEP_J121756_91+162640_2_A3Button" to="WISEP_J121756_91+162640_2_A2" method="_on_wisep_j_121756_91162640_2_a_3_pressed"]

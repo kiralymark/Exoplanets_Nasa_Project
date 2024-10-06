@@ -1,0 +1,83 @@
+[gd_scene load_steps=10 format=3 uid="uid://dlnda36e0aair"]
+
+[ext_resource type="PackedScene" uid="uid://c3b2ruprgundp" path="res://Scenes/55_cancri_e_bake.tscn" id="1_tt36w"]
+[ext_resource type="Script" path="res://Scenes/SpaceShip.gd" id="2_l5gl6"]
+[ext_resource type="PackedScene" uid="uid://c2ykb47canhvg" path="res://Scenes/j_1407b.tscn" id="2_oeqdi"]
+[ext_resource type="Script" path="res://Scenes/Planet.gd" id="2_y0fbd"]
+[ext_resource type="PackedScene" uid="uid://huxdrhbo18mq" path="res://Scenes/lightstar.tscn" id="4_sxya4"]
+
+[sub_resource type="Sky" id="Sky_rm3lw"]
+
+[sub_resource type="Environment" id="Environment_lxcx8"]
+background_mode = 1
+sky = SubResource("Sky_rm3lw")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_curp3"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_e63o4"]
+
+[node name="MainScene" type="Node3D"]
+
+[node name="CameraThirdPerson" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13.0768, 77.7309)
+environment = SubResource("Environment_lxcx8")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.116758, 0, 85.5314)
+
+[node name="SpaceShip" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 53.0056)
+script = ExtResource("2_l5gl6")
+
+[node name="CameraFirstPerson" type="Camera3D" parent="SpaceShip"]
+transform = Transform3D(1, 0, 2.38419e-07, 0, 1, 0, -2.38419e-07, 0, 1, -0.176446, 1.03707, -2.29766)
+
+[node name="LightStar" parent="SpaceShip" instance=ExtResource("4_sxya4")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="SpaceShip"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SpaceShip/Area3D"]
+transform = Transform3D(2.653, -4.00592e-07, 1.75104e-14, 0, -1.15966e-07, -2.653, 4.00592e-07, 2.653, -1.15966e-07, 0, 0.878147, -0.201736)
+shape = SubResource("CapsuleShape3D_curp3")
+
+[node name="Planet" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 1, 0)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="Planet"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Planet/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="55_Cancri_e_bake" parent="Planet" instance=ExtResource("1_tt36w")]
+
+[node name="Planet2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+script = ExtResource("2_y0fbd")
+
+[node name="Area3D" type="Area3D" parent="Planet2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Planet2/Area3D"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("SphereShape3D_e63o4")
+
+[node name="J1407B" parent="Planet2" instance=ExtResource("2_oeqdi")]
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="ChangeViewButton" type="Button" parent="UI"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Change view"
+
+[node name="DescriptionLabel" type="Label" parent="UI"]
+offset_top = 31.0
+offset_right = 40.0
+offset_bottom = 54.0
+
+[connection signal="area_entered" from="SpaceShip/Area3D" to="SpaceShip" method="_on_area_3d_area_entered"]
+[connection signal="input_event" from="Planet/Area3D" to="Planet" method="_on_area_3d_input_event"]
+[connection signal="input_event" from="Planet2/Area3D" to="Planet2" method="_on_area_3d_input_event"]

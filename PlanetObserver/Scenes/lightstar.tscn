@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://huxdrhbo18mq"]
+
+[ext_resource type="PackedScene" uid="uid://cggleycfgmg0s" path="res://Assets/SpaceShip/lightstar.glb" id="1_5dngh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76euu"]
+albedo_color = Color(0.345098, 0.317647, 0.341176, 1)
+
+[node name="lightstar" instance=ExtResource("1_5dngh")]
+
+[node name="Cube_047" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_76euu")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxh2w0yyxe68t"]
+
+[ext_resource type="PackedScene" uid="uid://bkc1vtatrjnk1" path="res://Assets/Planets/J1407B/J1407B.glb" id="1_w7jhg"]
+[ext_resource type="Texture2D" uid="uid://c1da3xvkjwn0" path="res://Assets/Planets/J1407B/J1407B_planet.png" id="2_bq735"]
+[ext_resource type="Texture2D" uid="uid://blqnxugfjia4g" path="res://Assets/Planets/J1407B/ring.png" id="3_yo7a7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sbevg"]
+albedo_texture = ExtResource("2_bq735")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ib1uq"]
+albedo_texture = ExtResource("3_yo7a7")
+
+[node name="J1407B" instance=ExtResource("1_w7jhg")]
+
+[node name="Sphere" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_sbevg")
+
+[node name="Circle" parent="." index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ib1uq")
